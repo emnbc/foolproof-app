@@ -5,3 +5,4 @@
             <div mat-line>{{user.givenName}} {{user.familyName}}</div>
         </mat-list-item>
 </mat-list>
+<div *ngIf="!isLoading && !users.length">Not Found</div>

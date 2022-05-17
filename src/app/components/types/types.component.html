@@ -5,3 +5,4 @@
         <div mat-line>{{type.name}} ({{type.description}})</div>
     </mat-list-item>
 </mat-list>
+<div *ngIf="!isLoading && !types.length">Not Found</div>
