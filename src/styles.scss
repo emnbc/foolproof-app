@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.item-list {
+
+    &__icon {
+        color: rgba(0, 0, 0, 0.54);
+    }
+
+    &__info {
+        opacity: .7;
+
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+    }
+}
+
+.spinner {
+    margin: 32px auto;
+}

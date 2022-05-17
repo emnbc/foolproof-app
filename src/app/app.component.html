@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <span>Foolproof App</span>
+</mat-toolbar>
+
+<div class="main-page">
+
+  <nav mat-tab-nav-bar [tabPanel]="tabPanel">
+    <a mat-tab-link *ngFor="let link of links"
+    [routerLink]="link.path"
+    [active]="activeLink === link.path"> {{link.name}} </a>
+  </nav>
+  
+  <mat-tab-nav-panel class="main-page__content" #tabPanel>
+    <router-outlet></router-outlet>
+  </mat-tab-nav-panel>
+</div>

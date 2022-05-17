@@ -1,0 +1,7 @@
+<mat-spinner *ngIf="isLoading" class="spinner"></mat-spinner>
+<mat-list *ngIf="!isLoading" class="item-list">
+        <mat-list-item *ngFor="let user of users">
+            <mat-icon class="item-list__icon" mat-list-icon>account_circle</mat-icon>
+            <div mat-line>{{user.givenName}} {{user.familyName}}</div>
+        </mat-list-item>
+</mat-list>
